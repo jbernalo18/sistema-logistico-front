@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>HTML Example</title>
+</head>
+<body>
+    <div class="div-form-crear-envio">
+    <h1 class="titulo-crear-envio">Crear envio</h1>
+    <form id="envio-form">
+        <input type="text" id="cliente" placeholder="Cliente" required>
+        <input type="text" id="destino" placeholder="Destino" required>
+        <input type="number" id="pesoKg" placeholder="Peso" step="0.1" required>
+        <button type="submit">CrearEnvio</button>
+    </form>
+    </div>
+
+    <div class="todos-envios">
+    <h2>Todos los envios</h2>
+    <div id="div-todos-envios"></div>
+    <button id="btn-anterior">Anterior</button>
+    <button id="btn-siguiente">Siguiente</button>
+    </div>
+
+    
+    <form id="eliminar-form">
+    <h2>Eliminar envio: </h2>
+    <div id="div-eliminar-envio">
+    <input type="text" id="eliminar-id" placeholder="Id a Eliminar" required>
+    <button type="submit">EliminarEnvio</button>
+    </div>
+    </form>
+
+    <h1>Crear conductor</h1>
+     <form id="envio-form-conductores">
+        <input type="text" id="nombreC" placeholder="Nombre Conductor" required>
+        <input type="text" id="apellidoC" placeholder="Apellido Conductor" required>
+        <input type="text" id="licenciaC" placeholder="Licencia Conductor" required>
+        <input type="text" id="telefonoC" placeholder="Telefono Conductor" required>
+        <input type="text" id="contrasenaC" placeholder="Crea una Contraseña" required>
+
+
+
+        <button type="submit">CrearConductor</button>
+    </form>
+
+    <h2>Todos los Conductores</h2>
+    <div id="todos-conductores"></div>
+
+
+    <form id="eliminar-conductor-form">
+    <h2>Eliminar conductor: </h2>
+    <div id="div-eliminar-conductor">
+    <input type="text" id="eliminar-id-conductor" placeholder="Id a Eliminar" required>
+    <button type="submit">EliminarConductor</button>
+    </div>
+    </form>
+
+    <h1>Crear Asignacion</h1>
+    <form id="envio-form-asignacion">
+        <input type="text" id="id-envio" placeholder="Id Envio" required>
+        <input type="text" id="id-conductor" placeholder="Id Conductor" required>
+        <input type="text" id="responsable" placeholder="Responsable"  required>
+        <input type="text" id="observaciones" placeholder="Observaciones">
+        <button type="submit">Asignar Envio</button>
+    </form>
+
+
+
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./events.js"></script>
+
+
+</body>
+</html>
