@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/envios";
+const API_URL = "https://practica-springboot-b71d0.containers.snapdeploy.app/api/envios";
 
 export async function getData(page = 0, size = 5) {
     try{
