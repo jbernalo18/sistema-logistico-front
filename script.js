@@ -78,7 +78,7 @@ export async function deleteEnvio(id) {
 }
 }
 
-const URL_CONDUCTORES = "http://localhost:8080/api/conductores";
+const URL_CONDUCTORES = "https://practica-springboot-b71d0.containers.snapdeploy.app/api/conductores";
 
 export async function getConductores() {
     try{
